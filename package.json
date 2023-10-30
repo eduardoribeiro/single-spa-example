@@ -1,0 +1,11 @@
+{
+  "name": "supernova-docs",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^7.4.1"
+  }
+}

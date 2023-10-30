@@ -1,0 +1,37 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main class="container">
+    <navbar>
+      <application name="@supernova/docs-navbar"></application>
+    </navbar>
+    <route default>
+      <application name="@supernova/docs-homepage"></application>
+    </route>
+    <route path="design-system">
+      <application name="@supernova/docs-design-system"></application>
+    </route>
+    <route path="components">
+      <application name="@supernova/docs-components"></application>
+    </route>
+    <footer>
+      <application name="@supernova/docs-footer"></application>
+    </footer>
+  </main>
+</single-spa-router>
